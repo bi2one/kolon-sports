@@ -1,0 +1,113 @@
+.bottom-margin16 {
+	margin-bottom: 16px;
+}
+
+.height122 {
+	height: 80px;
+}
+
+.clear {
+	clear: both;
+}
+
+#wrapper {}
+
+#sidebar-area{
+	float: left;
+	width: 215px;
+}
+
+#contents{
+	width: 850px;
+	margin:auto;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+#main {
+	width: 1280px;
+	margin: auto;
+}
+
+.book-area{
+	padding-top: 50px;
+	height: 575px;
+}
+
+.nav-area{
+	height: 52px;
+}
+
+/** footer */
+#copyright{
+	width: 526px;
+	height: 15px;
+	margin:auto;
+	margin-top: 41px;
+	margin-bottom: 32px;
+}
+/** ~footer */
+
+/** sidebar */
+h2#logo {
+	margin: 18px 0 18px 40px;
+	width: 102px;
+}
+
+a#view-pages-link {
+	display: block;
+	margin: 0 0 10px 45px;
+}
+
+a#page-next-link {
+	display: block;
+	margin: -21px 0 0 29px;
+	margin-left: 29px;
+}
+
+#sidebar-area > nav {
+	margin-left: 29px;
+}
+
+a#all-pages-link {
+	display: block;
+	margin: 12px 0 0 33px;
+}
+/** ~sidebar */
+
+/** nav-area */
+.nav-area {
+	padding: 0 22px;
+}
+
+.nav-area nav {
+	height: 52px;
+}
+
+.left-nav-area{
+	width: 140px;
+	float: left;
+}
+
+.left-nav-area img{
+	margin-top: 4px;
+}
+.right-nav-area{
+	margin-top: 4px;
+}
+
+.right-nav-area {
+	width: 140px;
+	float: right;
+}
+
+.right-nav-area > img {
+	float: right;
+}
+
+.center-nav-area > img {
+	display: block;
+	margin: auto;
+}
