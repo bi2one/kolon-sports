@@ -20,7 +20,7 @@
 		<filter-name>UrlRewriteFilter</filter-name>
 		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
 		<init-param>
-			<param-name>statusEnabled</param-name>
+			<param-name>statusEnabled</param-na`me>
 			<param-value>false</param-value>
 		</init-param>		
 	</filter>
