@@ -70,6 +70,21 @@ public class PageMapper {
         pages.add("lookbook_m9");
         pages.add("lookbook_m10");
         /** ~look book pages */
+        
+        /** style pick pages by KMS */
+        pages.add("stylepick"); //page=34
+        pages.add("stylepick_1");
+        pages.add("stylepick_2");
+        pages.add("stylepick_3");
+        pages.add("stylepick_4");
+        pages.add("stylepick_5");
+        pages.add("stylepick_6");
+        pages.add("stylepick_7");
+        pages.add("stylepick_8");
+        pages.add("stylepick_9");
+        pages.add("stylepick_10");
+        /** ~style pick pages by KMS */
+        
 
         /** essential items pages */
         pages.add("essential");
