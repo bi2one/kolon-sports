@@ -1,10 +1,8 @@
 <%@page contentType="text/html; charset=utf-8" %>
-<%@page import="com.mobitle.kolonsports.PageMapper" %>
-<%
-	PageMapper pageMapper = PageMapper.getInstance(request);
-%>
+<jsp:useBean id="resource" class="com.mobitle.kolonsports.PageResourceBean" scope="session" />
+
 <!-- book content -->
-	<div class="book-contents" style="width: 850px; height: 575px; background: url('<%=pageMapper.getImageUrl("stylepick-1.png")%>') no-repeat top left; ">
+	<div class="book-contents" style="width: 850px; height: 575px; background: url('<%=resource.getImageUrl("stylepick-1.png")%>') no-repeat top left; ">
 
 	</div>
 

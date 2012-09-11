@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8" %>
+<<<<<<< HEAD
 <%@page import="com.mobitle.kolonsports.PageMapper" %>
 <%
 	PageMapper pageMapper = PageMapper.getInstance(request);
@@ -43,3 +44,7 @@ $(document).ready(function() {
 </script>
 <script type="text/javascript" src="<%=pageMapper.getScriptUrl("collection.js")%>"></script>
 <script type="text/javascript" src="<%=pageMapper.getScriptUrl("fancybox.js")%>"></script>
+=======
+<jsp:useBean id="resource" class="com.mobitle.kolonsports.PageResourceBean" scope="session" />
+<img src="<%= resource.getImageUrl("collection_footer.png") %>" width="415px" height="52px"/>
+>>>>>>> ad4be0e8817e4679767b3a57abf7c0639bf80e5e
