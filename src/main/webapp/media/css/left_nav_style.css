@@ -1,0 +1,14 @@
+.sprite-left-nav { background: url('../images/sprite-left-nav.png') no-repeat top left; }
+
+.sprite-left_nav_01{ background-position: 0 0; width: 75px; height: 12px; } 
+.sprite-left_nav_02{ background-position: 0 -62px; width: 75px; height: 12px; } 
+.sprite-left_nav_03{ background-position: 0 -124px; width: 75px; height: 12px; } 
+.sprite-left_nav_04{ background-position: 0 -186px; width: 75px; height: 11px; } 
+
+
+.sprite-left-nav { background: url('../images/sprite-left-nav-over.png') no-repeat top left; }
+
+.sprite-left_nav-over_01{ background-position: 0 0; width: 75px; height: 12px; } 
+.sprite-left_nav-over_02{ background-position: 0 -62px; width: 75px; height: 12px; } 
+.sprite-left_nav-over_03{ background-position: 0 -124px; width: 75px; height: 12px; } 
+.sprite-left_nav-over_04{ background-position: 0 -186px; width: 75px; height: 11px; } 
