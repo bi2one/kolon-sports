@@ -8,7 +8,7 @@
 	<div class="book-contents" style="width: 850px; height: 575px; background: url('<%=resource.getImageUrl("book-styleon-looks.png")%>') no-repeat top left; z-index:1000; position: absolute; ">
 	
 		<a style="margin: 34px 0 0 60px; width: 55px; height: 155px; display: inline-block;" href="#"></a>
-		<a style="margin-left: 18px; width: 55px; height: 155px; display: inline-block;" href="page.jsp?page=15"></a>
+		<a style="margin-left: 18px; width: 55px; height: 155px; display: inline-block;" href="<%= resource.getPageUrl(15)%>"></a>
 		<a style="margin-left: 18px; width: 55px; height: 155px; display: inline-block;" href="#"></a>
 		
 		<a style="margin-left: 18px; width: 110px; height: 150px; display: inline-block;" href="#"></a>

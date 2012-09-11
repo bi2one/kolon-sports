@@ -168,6 +168,6 @@ public class PageResourceBean implements java.io.Serializable {
     }
 
     public String getPageUrl(int page) {
-        return "/page.jsp?page=" + page;
+        return getContextPath("page.jsp?page=" + page);
     }
 }
