@@ -1,7 +1,13 @@
 <%@page contentType="text/html; charset=utf-8" %>
 <jsp:useBean id="resource" class="com.mobitle.kolonsports.PageResourceBean" scope="session" />
-<img src="<%= resource.getImageUrl("collection_footer_backstage.png") %>" width="415px" height="52px"/>
 
+<div class="co co-third-button" id="collection_menu">
+<ul style="padding-top: 35px;height: 24px; ">
+<li style="height: 100%; width:210px;float: left;"><a id="first-button" href="" style="float: left; width: 100%;height: 100%;"></a></li>
+<li style="height: 100%; width:120px;float: left;"><a  id="second-button" href="" style="float: left; width: 100%;height: 100%;"></a></li>
+<li style="height: 100%; width:70px;float: left;"><a id="third-button" href="<%=resource.getPageUrl(2)%>" style="float: left; width: 100%;height: 100%;"></a></li>
+</ul>
+</div>
 <script language="JavaScript">
 		var lastID = null;
 		var handleMouseover = function(e) {

@@ -1,7 +1,7 @@
 package com.mobitle.kolonsports;
 
+import java.util.ArrayList;
 import java.net.URL;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.omg.CORBA.Request;
@@ -15,6 +15,7 @@ public class PageResourceBean implements java.io.Serializable {
     private String scriptJspUrl;
     private String sidebarJspUrl;
     private String footerJspUrl;
+    //private ArrayList<ThumbnailLink> thumbnails;
 
     private String contextPath;
     private String mediaUrl;
@@ -39,15 +40,36 @@ public class PageResourceBean implements java.io.Serializable {
         setScriptUrl(getMediaUrl("js"));
         setCssUrl(getMediaUrl("css"));
     }
-    
+
+    private void initThumbnails() {
+//        if (thumbnails == null)
+//            thumbnails = new ArrayList();
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+//    }
+//
+//    public ArrayList getThumbnails() {
+//        initThumbnails();
+//        return thumbnails;
+    }
+
     public void setCssUrl(String url) {
     	this.cssUrl = url;
     }
-    
+
     public String getCssUrl() {
     	return cssUrl;
     }
-    
+
     public String getCssUrl(String name) {
     	return cssUrl + "/" + name;
     }
@@ -115,13 +137,17 @@ public class PageResourceBean implements java.io.Serializable {
     public String getMediaUrl(String path) {
         return mediaUrl + "/" + path;
     }
-    
+
     public String getTemplateUrl() {
         return templateUrl;
     }
 
     public String getTemplateUrl(String filename) {
-        return templateUrl + "/" + filename;
+        if (filename == null || "".equals(filename)) {
+            return getTemplateUrl("empty");
+        } else {
+            return templateUrl + "/" + filename;
+        }
     }
 
     public String getImageUrl() {
@@ -174,5 +200,15 @@ public class PageResourceBean implements java.io.Serializable {
 
     public String getPageUrl(int page) {
         return "page.jsp?page=" + page;
+    }
+    public String vedioStarter(String explorer,String video){
+    	String vdo;
+    	String url=movieUrl+"/"+video;
+    	
+    	if(explorer.equals("ie"))
+    		vdo = "<embed src='"+url+"' type='application/x-shockwave-flash' width='100%' height='600px' allowscriptaccess='always' allowfullscreen='true' autoplay/>";
+    	else
+    		vdo = "<video id='video' src='"+url+"' controls style='width: 80%; height: 480px; margin:auto;'> <source src='"+url+"' type='video/mov' autoplay></source></video>";
+    	return vdo;
     }
    }

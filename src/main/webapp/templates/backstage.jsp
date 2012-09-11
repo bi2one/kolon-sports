@@ -1,2 +1,2 @@
 <%@page contentType="text/html; charset=utf-8" %>
-backstage_1
+<jsp:useBean id="resource" class="com.mobitle.kolonsports.PageResourceBean" scope="session" />

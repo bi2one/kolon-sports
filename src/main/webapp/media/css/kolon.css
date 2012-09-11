@@ -12,11 +12,6 @@
 
 #wrapper {}
 
-#sidebar-area{
-	float: left;
-	width: 215px;
-}
-
 #contents{
 	width: 850px;
 	margin:auto;
@@ -51,12 +46,28 @@ body {
 /** ~footer */
 
 /** sidebar */
+#empty-sidebar {
+	float: left;
+	width: 215px;
+	display:none;
+}
+
+#sidebar-area{
+	float: left;
+	width: 215px;
+}
+
+#view-pages-link {
+	display: block;
+	margin: 54px 0 0 0;
+}
+
 h2#logo {
 	margin: 18px 0 18px 40px;
 	width: 102px;
 }
 
-a#view-pages-link {
+a#view-pages-close-link {
 	display: block;
 	margin: 0 0 10px 45px;
 }

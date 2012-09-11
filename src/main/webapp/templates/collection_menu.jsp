@@ -1,21 +1,18 @@
 <%@page contentType="text/html; charset=utf-8" %>
 <%@page import="com.mobitle.kolonsports.PageMapper" %>
 <jsp:useBean id="resource" class="com.mobitle.kolonsports.PageResourceBean" scope="session" />
-<div class="co co-collection_menu_base" style="margin: auto;">
-<ul>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
+<div class="co co-collection_menu_base" id="collection_menu">
+<ul style="padding-top: 35px;height: 24px; ">
+<li style="height: 100%; width:210px;float: left;"><a id="collection_runway_movie" href="" style="float: left; width: 100%;height: 100%;"></a></li>
+<li style="height: 100%; width:120px;float: left;"><a id="collection_interview_movie" href="" style="float: left; width: 100%;height: 100%;"></a></li>
+<li style="height: 100%; width:70px;float: left;"><a id="co-backstage" href="<%=resource.getPageUrl(2)%>" style="float: left; width: 100%;height: 100%;"></a></li>
 </ul>
 </div>
 
 <script>
-var ie = "<embed src='<%=resource.getMovieUrl("kolon_G_Loop_smpl_comp.mov")%>' type='application/x-shockwave-flash' width='100%' height='600px' allowscriptaccess='always' allowfullscreen='true' autoplay/>";
-var el = "<video id='video' src='<%=resource.getMovieUrl("kolon_G_Loop_smpl_comp.mov")%>' controls style='width: 80%; height: 480px; margin:auto;'> <source src='<%=resource.getMovieUrl("kolon_G_Loop_smpl_comp.mov")%>'type='video/mov' autoplay></source></video>";
-
 $(document).ready(function() {
 	if( navigator.appName.indexOf("Microsoft") > -1 ){ // IE?
-		$("a#single_image").fancybox({
+		$("a#collection_runway_movie").fancybox({
 			'scrolling'     : 'no',
 			'overlayOpacity': 0.1,
 			'showCloseButton'   : false,
@@ -23,11 +20,21 @@ $(document).ready(function() {
 			'height': 300,
 			'autoDimensions': false,
 			'autoSize': false,
-			'content' : ie
+			'content' : "<%=resource.vedioStarter("ie", "kolon_G_Loop_smpl_comp.mov")%>"
+		});
+		$("a#collection_interview_movie").fancybox({
+			'scrolling'     : 'no',
+			'overlayOpacity': 0.1,
+			'showCloseButton'   : false,
+			'width' : 500,
+			'height': 300,
+			'autoDimensions': false,
+			'autoSize': false,
+			'content' : "<%=resource.vedioStarter("ie", "kolon_G_Loop_smpl_comp.mov")%>"
 		});
 	}
 	else{
-		$("a#single_image").fancybox({
+		$("a#collection_runway_movie").fancybox({
 			'scrolling'     : 'no',
 	        'overlayOpacity': 0.1,
 	        'showCloseButton'   : false,
@@ -35,10 +42,19 @@ $(document).ready(function() {
 			'height': 300,
 			'autoDimensions': false,
 			'autoSize': false,
-	        'content' : el
+	        'content' : "<%=resource.vedioStarter("chrome", "kolon_G_Loop_smpl_comp.mov")%>"
+		});
+		$("a#collection_interview_movie").fancybox({
+			'scrolling'     : 'no',
+	        'overlayOpacity': 0.1,
+	        'showCloseButton'   : false,
+			'width' : 500,
+			'height': 300,
+			'autoDimensions': false,
+			'autoSize': false,
+	        'content' : "<%=resource.vedioStarter("chrome", "kolon_G_Loop_smpl_comp.mov")%>"
 		});
 	}
-	
 	/* Using custom settings */
 });
 </script>

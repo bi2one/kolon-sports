@@ -5,17 +5,16 @@ var handleMouseover = function(e) {
 	if (lastID == 'first-button' || lastID == 'second-button'
 			|| lastID == 'third-button' || lastID == 'fourth-button'
 			|| lastID == 'fifth-button') {
-		$('#center-nav div').removeClass();
-		$('#center-nav div').addClass("bt bt_" + lastID);
-		if(lastID=='first-button')
-			$("a#foot_image").attr({src:"/kolon/media/images/collection_menu_3.png"});
-		else if(lastID=='second-button')
-			
-		else if(lastID=='third-button')
-			$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_3.png"});
-		
-	} else {
-		$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_base.png"});
+			$('#collection_menu').removeClass();
+			$('#collection_menu').addClass("co co-" + lastID);
+	}/*
+	else if(lastID=='co-runway'||lastID=='co-interview'||lastID=='co-backstage'){
+		$('#collection_menu').removeClass();
+		$('#collection_menu').addClass("co co-" + lastID);
+	}*/
+	else {
+		$('#collection_menu').removeClass();
+		$('#collection_menu').addClass("co co-collection_menu_base");
 	}
 };
 if (document.addEventListener) {

@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="<%= resource.getCssUrl("kolon.css")%>" type="text/css" media="screen" />
 <link rel="stylesheet" href="<%= resource.getCssUrl("collection.css")%>" type="text/css" media="screen" />
 <link rel="stylesheet" href="<%= resource.getCssUrl("style_nav_images.css")%>" type="text/css" media="screen" />
-
 <link rel="stylesheet" href="<%= resource.getCssUrl("left_nav_style.css")%>" type="text/css" media="screen" />
 
 <%if(request.getParameter("page").equals("1")){ %>
