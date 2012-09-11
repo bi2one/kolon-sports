@@ -8,10 +8,10 @@ var handleMouseover = function(e) {
 		$('#center-nav div').removeClass();
 		$('#center-nav div').addClass("bt bt_" + lastID);
 		if(lastID=='first-button')
-			$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_1.png"});
+			$("a#foot_image").attr({src:"/kolon/media/images/collection_menu_3.png"});
+		else if(lastID=='second-button')
+			
 		else if(lastID=='third-button')
-			$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_2.png"});
-		else if(lastID=='fourth-button')
 			$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_3.png"});
 		
 	} else {

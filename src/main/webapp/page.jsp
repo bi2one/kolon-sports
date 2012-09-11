@@ -76,10 +76,6 @@
 						<li><a id="num4" href="#4"></a></li>
 						<li><a id="num5" href="#5"></a></li>
 						<li><a id="num6" href="#6"></a></li>
-						<li><a id="num7" href="#7"></a></li>
-						<li><a id="num8" href="#8"></a></li>
-						<li><a id="num9" href="#9"></a></li>
-						<li><a id="num10" href="#10"></a></li>
 					</ul>
 				</div>
 			</div>

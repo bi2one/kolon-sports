@@ -3,9 +3,9 @@
 <jsp:useBean id="resource" class="com.mobitle.kolonsports.PageResourceBean" scope="session" />
 <div class="co co-collection_menu_base" style="margin: auto;">
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li><a href=""></a></li>
+<li><a href=""></a></li>
+<li><a href=""></a></li>
 </ul>
 </div>
 
