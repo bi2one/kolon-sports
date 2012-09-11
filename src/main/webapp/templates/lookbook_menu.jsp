@@ -28,4 +28,38 @@
 			</ul>
 		</div>
 	</div>
+	
+	<div class="paging" style="margin-top: 5px; width: 187px; margin: auto;">
+	<% 
+		for(int i=1; i<=24; i++) { 
+			if (i == 1) {
+	%>
+		<div style="display: inline-block;">
+		<ul>
+			<li>
+				<a class="sprite-style sprite-lookbook-num_<%=i%>" style="display: block;" herf="#"></a>
+			</li>
+	<%		
+			} else if (i%3 != 0){
+	%>
+			<li>
+				<a class="sprite-style sprite-lookbook-num_<%=i%>" style="display: block;" herf="#"></a>
+			</li>
+	<%
+			} else if (i%3 == 0){
+	%>
+			<li>
+				<a class="sprite-style sprite-lookbook-num_<%=i%>" style="display: block;" herf="#"></a>
+			</li>
+		</ul>
+		</div>
+		<div style="display: inline-block;">
+		<ul>
+	<%
+			}
+		}
+	%>
+
+		
+	</div>
 </div>
