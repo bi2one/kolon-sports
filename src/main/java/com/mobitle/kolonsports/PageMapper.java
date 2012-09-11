@@ -39,7 +39,7 @@ public class PageMapper {
     }
 
     private void addPages() {
-        pages.add("collection");//o
+        pages.add("collection");//1
         /** backstage pages */
         pages.add("backstage_1");
         pages.add("backstage_2");
@@ -53,30 +53,49 @@ public class PageMapper {
         pages.add("backstage_10");
         /** ~backstage pages */
 
-        pages.add("styleon");
+        pages.add("styleon"); // 12
         /** look book pages */
         pages.add("lookbook");
-        pages.add("lookbook_w1");
-        pages.add("lookbook_w2");
-        pages.add("lookbook_w3");
-        pages.add("lookbook_w4");
-        pages.add("lookbook_w5");
-        pages.add("lookbook_w6");
-        pages.add("lookbook_w7");
-        pages.add("lookbook_w8");
-        pages.add("lookbook_w9");
-        pages.add("lookbook_w10");
-        pages.add("lookbook_m1");
-        pages.add("lookbook_m2");
-        pages.add("lookbook_m3");
-        pages.add("lookbook_m4");
-        pages.add("lookbook_m5");
-        pages.add("lookbook_m6");
-        pages.add("lookbook_m7");
-        pages.add("lookbook_m8");
-        pages.add("lookbook_m9");
-        pages.add("lookbook_m10");
+        pages.add("lookbook_1");
+        pages.add("lookbook_2");
+        pages.add("lookbook_3");
+        pages.add("lookbook_4");
+        pages.add("lookbook_5");
+        pages.add("lookbook_6");
+        pages.add("lookbook_7");
+        pages.add("lookbook_8");
+        pages.add("lookbook_9");
+        pages.add("lookbook_10");
+        pages.add("lookbook_11");
+        pages.add("lookbook_12");
+        pages.add("lookbook_13");
+        pages.add("lookbook_14");
+        pages.add("lookbook_15");
+        pages.add("lookbook_16");
+        pages.add("lookbook_17");
+        pages.add("lookbook_18");
+        pages.add("lookbook_19");
+        pages.add("lookbook_20");
+        pages.add("lookbook_21");
+        pages.add("lookbook_22");
+        pages.add("lookbook_23");
+        pages.add("lookbook_24");
         /** ~look book pages */
+        
+        /** style pick pages by KMS */
+        pages.add("stylepick"); //page=38
+        pages.add("stylepick_1");
+        pages.add("stylepick_2");
+        pages.add("stylepick_3");
+        pages.add("stylepick_4");
+        pages.add("stylepick_5");
+        pages.add("stylepick_6");
+        pages.add("stylepick_7");
+        pages.add("stylepick_8");
+        pages.add("stylepick_9");
+        pages.add("stylepick_10");
+        /** ~style pick pages by KMS */
+        
 
         /** essential items pages */
         pages.add("essential");
@@ -111,7 +130,7 @@ public class PageMapper {
      
         /** ~glacial pages */
         pages.add("in_this_issue");
-        pages.add("collection_movie");//movie test (page.jsp?page=61)
+        pages.add("collection_movie");//movie test (page.jsp?page=76)
     }
 
     public String getPage(String page) {
@@ -186,6 +205,11 @@ public class PageMapper {
 
     public String getBottomMenuUrl(int index) {
         return getTemplate(getPage(index).split("_")[0] + "_menu.jsp");
+    }
+    
+    public String getLink(int index)//return link
+    {
+    	return "page.jsp?page="+index;
     }
     
 }

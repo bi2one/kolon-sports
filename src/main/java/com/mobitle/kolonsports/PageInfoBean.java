@@ -30,17 +30,25 @@ public class PageInfoBean implements java.io.Serializable {
             setValues(page, "collection", "collection", "collection_menu", "thumb");
             break;
         case 2:
-            setValues(page, "collection", "collection2", "collection_menu2", "thumb");
+            setValues(page, "backstage_1", "backstage_1", "backstage_menu", "thumb");
             break;
-        case 3:
-            setValues(page, "collection", "collection3", "collection_menu3", "thumb");
+        case 12:
+            setValues(page, "styleon", "styleon", "styleon_menu", "thumb");
             break;
-        case 4:
-            setValues(page, "collection", "collection4", "collection_menu4", "thumb");
+        case 13:
+            setValues(page, "lookbook", "lookbook", "lookbook_menu", "thumb");
             break;
-        case 5:
-            setValues(page, "collection", "collection", "collection_menu", "thumb");
+        case 15:
+            setValues(page, "lookbook_2", "lookbook_2", "lookbook_menu", "thumb");
             break;
+        case 38:
+            setValues(page, "stylepick", "stylepick", "stylepick_menu", "thumb");
+            break;
+        case 39:
+            setValues(page, "stylepick_1", "stylepick_1", "stylepick_menu", "thumb");
+            break;
+        case 76:
+            setValues(page, "movei_test", "collection_movie", "collection_menu", "thumb");
         default:
             setPage(1);
         }
