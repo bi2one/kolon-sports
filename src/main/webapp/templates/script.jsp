@@ -10,3 +10,4 @@
 <script type="text/javascript" src="<%=resource.getScriptUrl("collection.js")%>"></script>
 <script type="text/javascript" src="<%=resource.getScriptUrl("jquery.fancybox.pack.js")%>"></script>
 <%}%>
+<script type="text/javascript" src="<%=resource.getScriptUrl("center.nav.over.controller.js")%>"></script>

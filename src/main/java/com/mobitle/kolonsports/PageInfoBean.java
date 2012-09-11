@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServletResponse;
 public class PageInfoBean implements java.io.Serializable {
     private int page;
     private String name;
+    private String bigCtgName;    // Collection, Style On, In This Issue, Event
+    private String smallCtgName;
     private String contentFileName;
     private String menuFileName;
     private String thumbnailFileName;
@@ -26,28 +28,25 @@ public class PageInfoBean implements java.io.Serializable {
     public void setPage(final int page) {
         switch(page) {
         case 1:
-            setValues(page, "collection", "collection", "collection_menu", "thumb");
-            break;      
-        case 5:
-            setValues(page, "backstage_1", "backstage_1", "backstage_menu", "thumb");
+            //setValues(page, "collection", "collection", "collection_menu", "thumb");
+            setValues(page, "collection_main", "collection", "empty", "collection", "collection_menu", "thumb");
+        	break;
+        case 2:
+            //setValues(page, "backstage_1", "backstage_1", "backstage_menu", "thumb");
+            setValues(page, "runway_video", "collection", "runway_video", "collection", "collection_menu", "thumb");
             break;
-        case 6:
-            setValues(page, "backstage_2", "backstage_2", "backstage_menu", "thumb");
+        case 3:
+            //setValues(page, "backstage_1", "backstage_1", "backstage_menu", "thumb");
+            setValues(page, "designer_interview", "collection", "des_interview", "collection", "collection_menu", "thumb");
             break;
-        case 7:
-            setValues(page, "backstage_3", "backstage_3", "backstage_menu", "thumb");
+        case 4:
+            //setValues(page, "backstage_1", "backstage_1", "backstage_menu", "thumb");
+            setValues(page, "backstage_main", "collection", "backstage", "backstage_1", "backstage_menu", "thumb");
             break;
-        case 8:
-            setValues(page, "backstage_4", "backstage_4", "backstage_menu", "thumb");
-            break;
-        case 9:
-            setValues(page, "backstage_5", "backstage_5", "backstage_menu", "thumb");
-            break;
-        case 10:
-            setValues(page, "backstage_6", "backstage_6", "backstage_menu", "thumb");
-            break;
-        case 12:
-            setValues(page, "styleon", "styleon", "styleon_menu", "thumb");
+        case 11:
+            //setValues(page, "styleon", "styleon", "styleon_menu", "thumb");
+        	setValues(page, "styleon_main", "styleon", "empty", "styleon", "styleon_menu", "thumb");
+
             break;
         case 13:
             setValues(page, "lookbook", "lookbook", "lookbook_menu", "thumb");
@@ -75,9 +74,31 @@ public class PageInfoBean implements java.io.Serializable {
         setMenuFileName(menuFileName);
         setThumbnailFileName(thumbnailFileName);
     }
+    
+    /* Override */
+    private void setValues(int page, String name, String bigCtgName, String smallCtgName, String contentFileName, String menuFileName, String thumbnailFileName) {
+        this.page = page;
+        setName(name);
+        setBigCtgName(bigCtgName);
+        setSmallCtgName(smallCtgName);
+        setContentFileName(contentFileName);
+        setMenuFileName(menuFileName);
+        setThumbnailFileName(thumbnailFileName);
+    }
 
+    
+    // setter
+    
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public void setBigCtgName(String bigCtgName){  // big category
+    	this.bigCtgName = bigCtgName;
+    }
+    
+    public void setSmallCtgName(String SmallCtgName){
+    	this.smallCtgName = SmallCtgName;
     }
 
     public void setContentFileName(String filename) {
@@ -98,8 +119,19 @@ public class PageInfoBean implements java.io.Serializable {
         this.thumbnailFileName = filename;
     }
 
+    
+    // getter
+    
     public int getPage() {
         return page;
+    }
+    
+    public String getBigCtgName() {
+    	return bigCtgName;
+    }
+    
+    public String getSmallCtgName() {
+    	return smallCtgName;
     }
 
     public String getContentFileName() {
