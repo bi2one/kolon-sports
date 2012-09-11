@@ -1,5 +1,6 @@
 package com.mobitle.kolonsports;
 
+import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 
 public class PageResourceBean implements java.io.Serializable {
@@ -10,6 +11,7 @@ public class PageResourceBean implements java.io.Serializable {
     private String scriptJspUrl;
     private String sidebarJspUrl;
     private String footerJspUrl;
+    private ArrayList<ThumbnailLink> thumbnails;
 
     private String contextPath;
     private String mediaUrl;
@@ -34,15 +36,36 @@ public class PageResourceBean implements java.io.Serializable {
         setScriptUrl(getMediaUrl("js"));
         setCssUrl(getMediaUrl("css"));
     }
-    
+
+    private void initThumbnails() {
+        if (thumbnails == null)
+            thumbnails = new ArrayList();
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+        thumbnails.add(new ThumbnailLink("#", getImageUrl("thumbnail.png")));
+    }
+
+    public ArrayList getThumbnails() {
+        initThumbnails();
+        return thumbnails;
+    }
+
     public void setCssUrl(String url) {
     	this.cssUrl = url;
     }
-    
+
     public String getCssUrl() {
     	return cssUrl;
     }
-    
+
     public String getCssUrl(String name) {
     	return cssUrl + "/" + name;
     }
@@ -110,13 +133,17 @@ public class PageResourceBean implements java.io.Serializable {
     public String getMediaUrl(String path) {
         return mediaUrl + "/" + path;
     }
-    
+
     public String getTemplateUrl() {
         return templateUrl;
     }
 
     public String getTemplateUrl(String filename) {
-        return templateUrl + "/" + filename;
+        if (filename == null || "".equals(filename)) {
+            return getTemplateUrl("empty");
+        } else {
+            return templateUrl + "/" + filename;
+        }
     }
 
     public String getImageUrl() {
