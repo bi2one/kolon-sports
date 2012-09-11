@@ -31,12 +31,29 @@
 					<img src="<%= resource.getImageUrl("right_nav.png") %>"
 						width="109px" height="47px" />
 				</nav>
-
-
 				<nav class="center-nav-area">
 					<jsp:include page="<%=info.getMenuUrl()%>" />
 				</nav>
 			</section>
+			<%if(request.getParameter("page").equals("5")){%>
+			<div id="number">
+				<div id="number-list" class="num num-numbase"
+					style="margin: auto; margin-top: 5px;">
+					<ul id="backstage-number">
+						<li><a id="num1" href="#1"></a></li>
+						<li><a id="num2" href="#2"></a></li>
+						<li><a id="num3" href="#3"></a></li>
+						<li><a id="num4" href="#4"></a></li>
+						<li><a id="num5" href="#5"></a></li>
+						<li><a id="num6" href="#6"></a></li>
+						<li><a id="num7" href="#7"></a></li>
+						<li><a id="num8" href="#8"></a></li>
+						<li><a id="num9" href="#9"></a></li>
+						<li><a id="num10" href="#10"></a></li>
+					</ul>
+				</div>
+			</div>
+			<%}%>
 		</div>
 		<jsp:include page="<%= resource.getFooterJspUrl() %>" flush="false" />
 	</div>

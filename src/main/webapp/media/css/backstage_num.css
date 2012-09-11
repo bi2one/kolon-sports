@@ -1,0 +1,89 @@
+.num {
+    background: url("../images/backstage_number.png") no-repeat top left;
+    display: block;
+}
+
+.num-num1 {
+    background-position: 0 0;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num10 {
+    background-position: 0 -68px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num2 {
+    background-position: 0 -136px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num3 {
+    background-position: 0 -204px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num4 {
+    background-position: 0 -272px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num5 {
+    background-position: 0 -340px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num6 {
+    background-position: 0 -408px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num7 {
+    background-position: 0 -476px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num8 {
+    background-position: 0 -544px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-num9 {
+    background-position: 0 -612px;
+    width: 166px;
+    height: 18px;;
+}
+
+.num-numbase {
+    background-position: 0 -680px;
+    width: 166px;
+    height: 18px;
+}
+
+#number {
+    height: 50px;
+    width: 100%;
+}
+
+#backstage-number{
+	margin:auto;
+}
+#backstage-number>li{
+	 float: left;
+	 height: 16px;
+	 width: 16.5px;
+}
+#backstage-number>li>a{
+	float: left;
+	width:100%;
+	height: 100%;
+}

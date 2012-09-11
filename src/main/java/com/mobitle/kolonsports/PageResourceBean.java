@@ -1,6 +1,11 @@
 package com.mobitle.kolonsports;
 
+import java.net.URL;
+
 import javax.servlet.http.HttpServletRequest;
+
+import org.omg.CORBA.Request;
+import org.omg.PortableInterceptor.RequestInfo;
 
 public class PageResourceBean implements java.io.Serializable {
     private String indexPageUrl;
@@ -168,6 +173,6 @@ public class PageResourceBean implements java.io.Serializable {
     }
 
     public String getPageUrl(int page) {
-        return "/page.jsp?page=" + page;
+        return "page.jsp?page=" + page;
     }
-}
+   }

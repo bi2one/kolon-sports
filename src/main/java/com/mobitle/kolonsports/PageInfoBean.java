@@ -14,7 +14,6 @@ public class PageInfoBean implements java.io.Serializable {
     private String contentUrl = "";
     private String mediaUrl = "";
     private String templateUrl = "";
-        
     public PageInfoBean() { }
 
     public void init(HttpServletRequest request) {
@@ -28,9 +27,24 @@ public class PageInfoBean implements java.io.Serializable {
         switch(page) {
         case 1:
             setValues(page, "collection", "collection", "collection_menu", "thumb");
-            break;
-        case 2:
+            break;      
+        case 5:
             setValues(page, "backstage_1", "backstage_1", "backstage_menu", "thumb");
+            break;
+        case 6:
+            setValues(page, "backstage_2", "backstage_2", "backstage_menu", "thumb");
+            break;
+        case 7:
+            setValues(page, "backstage_3", "backstage_3", "backstage_menu", "thumb");
+            break;
+        case 8:
+            setValues(page, "backstage_4", "backstage_4", "backstage_menu", "thumb");
+            break;
+        case 9:
+            setValues(page, "backstage_5", "backstage_5", "backstage_menu", "thumb");
+            break;
+        case 10:
+            setValues(page, "backstage_6", "backstage_6", "backstage_menu", "thumb");
             break;
         case 12:
             setValues(page, "styleon", "styleon", "styleon_menu", "thumb");
