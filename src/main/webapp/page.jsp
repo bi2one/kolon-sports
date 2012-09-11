@@ -69,7 +69,7 @@
 							if (info.getBigCtgName() == "issue") {
 						%>
 						<li>
-							<a href="<%=resource.getPageUrl(pageNum)%>"
+							<a href="<%=resource.getPageUrl(49)%>"
 								class="sprite-left-nav-over sprite-left_nav-over_03"
 								style="display: block; cursor: pointer;"></a>
 						</li>
@@ -77,7 +77,7 @@
 							} else {
 						%>
 						<li>
-							<a href="<%=resource.getPageUrl(pageNum)%>"
+							<a href="<%=resource.getPageUrl(49)%>"
 								class="sprite-left-nav sprite-left_nav_03"
 								style="display: block; cursor: pointer;"></a>
 						</li>
@@ -88,7 +88,7 @@
 							if (info.getBigCtgName() == "event") {
 						%>
 						<li>
-							<a href="<%=resource.getPageUrl(pageNum)%>"
+							<a href="<%=resource.getPageUrl(77)%>"
 								class="sprite-left-nav-over sprite-left_nav-over_04"
 								style="display: block; cursor: pointer;"></a>
 						</li>
@@ -96,7 +96,7 @@
 							} else {
 						%>
 						<li>
-							<a href="<%=resource.getPageUrl(2)%>"
+							<a href="<%=resource.getPageUrl(77)%>"
 								class="sprite-left-nav sprite-left_nav_04"
 								style="display: block; cursor: pointer;"></a>
 						</li>

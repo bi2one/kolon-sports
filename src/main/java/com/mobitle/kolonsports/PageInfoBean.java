@@ -120,13 +120,16 @@ public class PageInfoBean implements java.io.Serializable {
             setValues(page, "stylepick", "styleon", "", "stylepick", "stylepick_menu");
             break;
         case 39:
-            setValues(page, "stylepick_1", "", "", "stylepick_1", "stylepick_menu");
+            setValues(page, "stylepick_1", "styleon", "", "stylepick_1", "stylepick_menu");
             break;
         case 49:
-            setValues(page, "in_this_issue", "", "", "styleon", "collection_menu", "in_this_issue_bg.jpg");
+            setValues(page, "in_this_issue", "issue", "", "styleon", "collection_menu", "in_this_issue_bg.jpg");
             break;
         case 76:
             setValues(page, "movie_test", "", "", "collection_movie", "collection_menu");
+        case 77:
+            setValues(page, "event_page", "event", "", null, "lookbook_menu", "lookbook_w10_bg.jpg");
+            break;    
         default:
             setPage(1);
         }
