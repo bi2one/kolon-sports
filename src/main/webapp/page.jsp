@@ -27,28 +27,83 @@
 			<section class="nav-area">
 				<nav class="left-nav-area">
 					<ul>
-						<li><a href="<%=resource.getPageUrl(2)%>"
-							class="sprite-left-nav sprite-left_nav_01"
-							style="display: block; cursor: pointer;"></a></li>
 						<%
-							if (info.getPage() == 2) {
+							if (info.getBigCtgName() == "collection") {
 						%>
-						<li><a href="<%=resource.getPageUrl(2)%>"
-							class="sprite-left-nav-over sprite-left_nav-over_01"
-							style="display: block; cursor: pointer;"></a></li>
+						<li>
+							<a href="<%=resource.getPageUrl(2)%>"
+								class="sprite-left-nav-over sprite-left_nav-over_01"
+								style="display: block; cursor: pointer;"></a>
+						</li>
+						<%
+							} else {
+						%>
+						<li>
+							<a href="<%=resource.getPageUrl(2)%>"
+								class="sprite-left-nav sprite-left_nav_01"
+								style="display: block; cursor: pointer;"></a>
+						</li>
 						<%
 							}
 						%>
+						<%
+							if (info.getBigCtgName() == "styleon") {
+						%>
+						<li>
+							<a href="<%=resource.getPageUrl(8)%>"
+								class="sprite-left-nav-over sprite-left_nav-over_02"
+								style="display: block; cursor: pointer;"></a>
 						</li>
-						<li><a href="<%=resource.getPageUrl(2)%>"
-							class="sprite-left-nav sprite-left_nav_02"
-							style="display: block; cursor: pointer;"> </a></li>
-						<li><a href="<%=resource.getPageUrl(2)%>"
-							class="sprite-left-nav sprite-left_nav_03"
-							style="display: block; cursor: pointer;"> </a></li>
-						<li><a href="<%=resource.getPageUrl(2)%>"
-							class="sprite-left-nav sprite-left_nav_04"
-							style="display: block; cursor: pointer;"> </a></li>
+						<%
+							} else {
+						%>
+						<li>
+							<a href="<%=resource.getPageUrl(8)%>"
+								class="sprite-left-nav sprite-left_nav_02"
+								style="display: block; cursor: pointer;"></a>
+						</li>
+						<%
+							}
+						%>
+						<%
+							if (info.getBigCtgName() == "issue") {
+						%>
+						<li>
+							<a href="<%=resource.getPageUrl(49)%>"
+								class="sprite-left-nav-over sprite-left_nav-over_03"
+								style="display: block; cursor: pointer;"></a>
+						</li>
+						<%
+							} else {
+						%>
+						<li>
+							<a href="<%=resource.getPageUrl(49)%>"
+								class="sprite-left-nav sprite-left_nav_03"
+								style="display: block; cursor: pointer;"></a>
+						</li>
+						<%
+							}
+						%>
+						<%
+							if (info.getBigCtgName() == "event") {
+						%>
+						<li>
+							<a href="<%=resource.getPageUrl(77)%>"
+								class="sprite-left-nav-over sprite-left_nav-over_04"
+								style="display: block; cursor: pointer;"></a>
+						</li>
+						<%
+							} else {
+						%>
+						<li>
+							<a href="<%=resource.getPageUrl(77)%>"
+								class="sprite-left-nav sprite-left_nav_04"
+								style="display: block; cursor: pointer;"></a>
+						</li>
+						<%
+							}
+						%>
+						
 					</ul>
 				</nav>
 				<nav class="right-nav-area">
