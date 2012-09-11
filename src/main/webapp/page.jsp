@@ -1,12 +1,14 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <jsp:useBean id="info" class="com.mobitle.kolonsports.PageInfoBean"
-	scope="session" />
+			 scope="session" />
 <jsp:useBean id="resource" class="com.mobitle.kolonsports.PageResourceBean" scope="session" />
 <jsp:setProperty name="info" property="page" />
 <%
-	info.init(request);
-	resource.init(request);
-%>
+	 info.init(request);
+	 resource.init(request);
+
+	 int pageNum = Integer.parseInt(request.getParameter("page"));
+	 %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -23,21 +25,45 @@
 				</section>
 				<section class="nav-area">
 					<nav class="left-nav-area">
-						<img src="<%= resource.getImageUrl("left_nav.png") %>" width="75px"
-							 height="47px" />
-					</nav>
-					<nav class="right-nav-area">
-						<img src="<%= resource.getImageUrl("right_nav.png") %>"
-							 width="109px" height="47px" />
-					</nav>
+						<ul>
+							<li>
+								<a href="<%=resource.getPageUrl(2)%>" class="sprite-left-nav sprite-left_nav_01" style="display: block; cursor: pointer;"></a>
+							</li>
+							<%
+								 if (info.getPage() == 2){
+								 %>						<li>
+								<a href="<%=resource.getPageUrl(2)%>" class="sprite-left-nav-over sprite-left_nav-over_01" style="display: block; cursor: pointer;"></a>
+							</li>
+							<%
+								 }
+								 %>
+</li>
+<li>
+	<a href="<%=resource.getPageUrl(2)%>" class="sprite-left-nav sprite-left_nav_02" style="display: block; cursor: pointer;">
+
+	</a>
+</li>
+<li>
+	<a href="<%=resource.getPageUrl(2)%>" class="sprite-left-nav sprite-left_nav_03" style="display: block; cursor: pointer;">
+
+	</a>
+</li>
+<li>
+	<a href="<%=resource.getPageUrl(2)%>" class="sprite-left-nav sprite-left_nav_04" style="display: block; cursor: pointer;">
+
+	</a>
+</li>
+</ul>
+</nav>
+<nav class="right-nav-area">
+	<img src="<%= resource.getImageUrl("right_nav.png") %>"
+		 width="109px" height="47px" />
+</nav>
 
 
-					<nav class="center-nav-area">
-						<jsp:include page="<%=info.getMenuUrl()%>" />
-					</nav>
-				</section>
-			</div>
-			<jsp:include page="<%= resource.getFooterJspUrl() %>" flush="false" />
-		</div>
-	</body>
-</html>
+<nav class="center-nav-area">
+	<jsp:include page="<%=info.getMenuUrl()%>" />
+</nav>
+</section>
+</div>
+<jsp:include page="<%= resource.getFooterJspUrl() %>" flush="false" />

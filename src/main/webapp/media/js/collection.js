@@ -8,14 +8,14 @@ var handleMouseover = function(e) {
 		$('#center-nav div').removeClass();
 		$('#center-nav div').addClass("bt bt_" + lastID);
 		if(lastID=='first-button')
-			$("img#foot_image").attr({src:"/kolon/media/images/collection_footer_runway.png"});
+			$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_1.png"});
 		else if(lastID=='third-button')
-			$("img#foot_image").attr({src:"/kolon/media/images/collection_footer_interview.png"});
+			$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_2.png"});
 		else if(lastID=='fourth-button')
-			$("img#foot_image").attr({src:"/kolon/media/images/collection_footer_backstage.png"});
+			$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_3.png"});
 		
 	} else {
-		$("img#foot_image").attr({src:"/kolon/media/images/collection_footer.png"});
+		$("img#foot_image").attr({src:"/kolon/media/images/collection_menu_base.png"});
 	}
 };
 if (document.addEventListener) {
