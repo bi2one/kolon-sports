@@ -32,7 +32,7 @@ public class PageMapper {
     }
 
     private void addPages() {
-        pages.add("collection");//o
+        pages.add("collection");//1
         /** backstage pages */
         pages.add("backstage_1");
         pages.add("backstage_2");
@@ -123,7 +123,7 @@ public class PageMapper {
      
         /** ~glacial pages */
         pages.add("in_this_issue");
-        pages.add("collection_movie");//movie test (page.jsp?page=72)
+        pages.add("collection_movie");//movie test (page.jsp?page=76)
     }
 
     public String getIndexPageUrl() {
@@ -175,6 +175,11 @@ public class PageMapper {
     public String getBottomMenuUrl(int index) {
         index--;
         return getTemplate(pages.get(index).split("_")[0] + "_menu.jsp");
+    }
+    
+    public String getLink(int index)//return link
+    {
+    	return "page.jsp?page="+index;
     }
     
 }

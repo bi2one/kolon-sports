@@ -3,4 +3,4 @@
 <%
 	PageMapper pageMapper = PageMapper.getInstance(request);
 %>
-<img src="<%= pageMapper.getImageUrl("collection_footer.png") %>" width="415px" height="52px"/>
+<img src="<%= pageMapper.getImageUrl("collection_footer_backstage.png") %>" width="415px" height="52px"/>

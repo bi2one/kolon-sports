@@ -7,6 +7,10 @@ var handleMouseover = function(e) {
 			|| lastID == 'fifth-button') {
 		$('#center-nav div').removeClass();
 		$('#center-nav div').addClass("bt bt_" + lastID);
+		if(lastID=='first-button')
+		{
+			
+		}
 	} else {
 		//$('#center-nav div').removeClass();
 		//$('#center-nav div').addClass("bt bt_middles");

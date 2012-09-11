@@ -5,3 +5,5 @@
 %>
 
 <script type="text/javascript" src="<%=pageMapper.getScriptUrl("html5shiv.js")%>"></script>
+<script type="text/javascript" src="<%=pageMapper.getScriptUrl("jquery.js")%>"></script>
+<script type="text/javascript" src="<%=pageMapper.getScriptUrl("jquery.fancybox.pack.js")%>"></script>

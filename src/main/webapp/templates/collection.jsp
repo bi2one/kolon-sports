@@ -3,14 +3,15 @@
 <%
 	PageMapper pageMapper = PageMapper.getInstance(request);
 %>
-<div class="sprite sprite-book_contents">
+<link rel="stylesheet" href="<%=pageMapper.getCSSUrl("jquery.fancybox.css")%>" type="text/css" media="screen" />
+<div class="collection_list">
 	<ul id="menu-list">
-	<li id="first_menu" class=""><a href="#1"><img id="first-button" src="<%=pageMapper.getImageUrl("menu1-n.png")%>" onmouseover="this.src='<%=pageMapper.getImageUrl("menu1-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu1-n.png")%>'"/></a></li>
-	<li id="second_menu" class=""><a href="#2"><img id="second-button"  src="<%=pageMapper.getImageUrl("menu2-n.png")%>" onmouseover="this.src='<%=pageMapper.getImageUrl("menu2-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu2-n.png")%>'"/></a></li>
-	<li id="third_menu" class=""><a href="#3"><img id="third-button"  src="<%=pageMapper.getImageUrl("menu3-n.png")%>"onmouseover="this.src='<%=pageMapper.getImageUrl("menu3-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu3-n.png")%>'"/></a></li>
-	<li id="fourth_menu" class=""  style="float: left;"><a href="#4" ><img id="fourth-button"  src="<%=pageMapper.getImageUrl("menu4-n.png")%>"onmouseover="this.src='<%=pageMapper.getImageUrl("menu4-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu4-n.png")%>'"/></a></li>
-	<li id="fifth_menu" class="" style="float: left;"><a href="#5"><img id="fifth-button"  src="<%=pageMapper.getImageUrl("menu5-n.png")%>"onmouseover="this.src='<%=pageMapper.getImageUrl("menu5-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu5-n.png")%>'"/></a></li>
+	<li id="first_menu" class=""><a id="single_image" href="<%=pageMapper.getLink(76)%>"><img id="first-button" src="<%=pageMapper.getImageUrl("menu1-n.png")%>"  alt="" onmouseover="this.src='<%=pageMapper.getImageUrl("menu1-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu1-n.png")%>'"/></a></li>
+	<li id="second_menu" class=""><a href=""><img id="second-button"  src="<%=pageMapper.getImageUrl("menu2-n.png")%>" onmouseover="this.src='<%=pageMapper.getImageUrl("menu2-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu2-n.png")%>'"/></a></li>
+	<li id="third_menu" class="" ><a href=""><img id="third-button"  src="<%=pageMapper.getImageUrl("menu3-n.png")%>"onmouseover="this.src='<%=pageMapper.getImageUrl("menu3-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu3-n.png")%>'"/></a></li>
+	<li id="fourth_menu" class=""><a href="" ><img id="fourth-button"  src="<%=pageMapper.getImageUrl("menu4-n.png")%>"onmouseover="this.src='<%=pageMapper.getImageUrl("menu4-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu4-n.png")%>'"/></a></li>
+	<li id="fifth_menu" class="" style="float: left; margin-top: -60px;"><a href=<%=pageMapper.getLink(2) %>><img id="fifth-button"  src="<%=pageMapper.getImageUrl("menu5-n.png")%>"onmouseover="this.src='<%=pageMapper.getImageUrl("menu5-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu5-n.png")%>'"/></a></li>
 	</ul>
 </div>
 <script type="text/javascript" src="<%=pageMapper.getScriptUrl("collection.js")%>"></script>
-<script type="text/javascript" src="<%=pageMapper.getScriptUrl("jquery.js")%>"></script>
+<script type="text/javascript" src="<%=pageMapper.getScriptUrl("fancybox.js")%>"></script>
