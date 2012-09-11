@@ -212,4 +212,8 @@ public class PageMapper {
     	return "page.jsp?page="+index;
     }
     
+    public String getNowUrl(){
+    	return request.getParameter("page");
+    }
+    
 }
