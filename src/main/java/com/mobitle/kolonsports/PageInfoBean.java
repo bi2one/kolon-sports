@@ -39,7 +39,7 @@ public class PageInfoBean implements java.io.Serializable {
             setValues(page, "lookbook", "lookbook", "lookbook_menu", "thumb");
             break;
         case 15:
-            setValues(page, "lookbook_2", "lookbook_2", "lookbook_menu", "thumb");
+            setvalues(page, "lookbook_2", "lookbook_2", "lookbook_menu", "thumb");
             break;
         case 38:
             setValues(page, "stylepick", "stylepick", "stylepick_menu", "thumb");

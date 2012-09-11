@@ -1,5 +1,8 @@
 <%@page contentType="text/html; charset=utf-8" %>
 <jsp:useBean id="resource" class="com.mobitle.kolonsports.PageResourceBean" scope="session" />
+<%
+	String browser = request.getHeader("User-Agent");
+%>
 <!-- book content -->
 
 	<div class="book-contents" style="width: 850px; height: 575px; background: url('<%=resource.getImageUrl("book-styleon-looks.png")%>') no-repeat top left; z-index:1000; position: absolute; ">

@@ -152,4 +152,8 @@ public class PageResourceBean implements java.io.Serializable {
     public String getFooterJspUrl() {
         return footerJspUrl;
     }
+
+    public String getPageUrl(int page) {
+        return "/page.jsp?page=" + page;
+    }
 }
