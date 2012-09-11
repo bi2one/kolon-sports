@@ -1,7 +1,8 @@
 <%@page contentType="text/html; charset=utf-8" %>
 <%@page import="com.mobitle.kolonsports.PageMapper" %>
+<jsp:useBean id="info" class="com.mobitle.kolonsports.PageInfoBean" scope="session" />
 <%
-	PageMapper pageMapper = PageMapper.getInstance(request);
+	PageMapper pageMapper = PageMapper.getInstance(request, response);
 %>
 <div class="sprite sprite-book_contents">
 	<ul id="menu-list">
@@ -12,5 +13,3 @@
 	<li id="fifth_menu" class="" style="float: left;"><a href="#5"><img id="fifth-button"  src="<%=pageMapper.getImageUrl("menu5-n.png")%>"onmouseover="this.src='<%=pageMapper.getImageUrl("menu5-r.png")%>'" onmouseout="this.src='<%=pageMapper.getImageUrl("menu5-n.png")%>'"/></a></li>
 	</ul>
 </div>
-<script type="text/javascript" src="<%=pageMapper.getScriptUrl("collection.js")%>"></script>
-<script type="text/javascript" src="<%=pageMapper.getScriptUrl("jquery.js")%>"></script>

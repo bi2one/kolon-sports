@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xml-data>
+	<pages>
+		<page>
+			<number>1</number>
+			<name>collection</name>
+			<thumbnail></thumbnail>
+			<menu>collection_menu</menu>
+			<category>1</category>
+		</page>
+		<page>
+			<number>2</number>
+			<name>backstage_1</name>
+			<thumbnail></thumbnail>
+			<menu>backstage_menu</menu>
+			<category>1</category>
+		</page>
+		<page>
+			<number>3</number>
+			<name>backstage_2</name>
+			<thumbnail></thumbnail>
+			<menu>backstage_menu</menu>
+			<category>1</category>
+		</page>
+		<page>
+			<number>4</number>
+			<name>backstage_3</name>
+			<thumbnail></thumbnail>
+			<menu>backstage_menu</menu>
+			<category>1</category>
+		</page>
+	</pages>
+</xml-data>

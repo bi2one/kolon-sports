@@ -1,7 +1,7 @@
 <%@page contentType="text/html; charset=utf-8" %>
 <%@page import="com.mobitle.kolonsports.PageMapper" %>
 <%
-	PageMapper pageMapper = PageMapper.getInstance(request);
+	PageMapper pageMapper = PageMapper.getInstance(request, response);
 %>
 <aside id="sidebar-area">
 	<h2 id="logo" alt="logo"><img width="102px" height="48px" src="<%=pageMapper.getImageUrl("logo.png")%>" alt="logo"/></h2>

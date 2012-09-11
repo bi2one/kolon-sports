@@ -1,12 +1,14 @@
 package com.mobitle.kolonsports;
 
 import java.util.ArrayList;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
 public class PageMapper {
     private volatile static PageMapper instance;
     private ArrayList<String> pages;
     private static HttpServletRequest request;
+    private static HttpServletResponse response;
     private static String contextPath;
 
     private PageMapper() {
@@ -14,12 +16,16 @@ public class PageMapper {
         addPages();
     }
 
+    private static void setResponse(HttpServletResponse response) {
+        instance.response = response;
+    }
+
     private static void setRequest(HttpServletRequest request) {
         instance.request = request;
         instance.contextPath = request.getContextPath();
     }
 
-    public static PageMapper getInstance(HttpServletRequest request) {
+    public static PageMapper getInstance(HttpServletRequest request, HttpServletResponse response) {
         if (instance == null) {
             synchronized(PageMapper.class) {
                 if (instance == null) {
@@ -28,6 +34,7 @@ public class PageMapper {
             }
         }
         setRequest(request);
+        setResponse(response);
         return instance;
     }
 
@@ -107,6 +114,14 @@ public class PageMapper {
         pages.add("collection_movie");//movie test (page.jsp?page=61)
     }
 
+    public String getPage(String page) {
+        return pages.get(confirmPage(page) - 1);
+    }
+    
+    public String getPage(int page) {
+        return pages.get(confirmPage(page) - 1);
+    }
+
     public String getIndexPageUrl() {
         return "/index.jsp";
     }
@@ -115,15 +130,32 @@ public class PageMapper {
         return "/allpage.jsp";
     }
 
+    private int confirmPage(String strPage) {
+        int page = 1;
+        try {
+            page = Integer.parseInt(strPage);
+        } catch(NumberFormatException e) { }
+        return confirmPage(page);
+    }
+
+    private int confirmPage(int intPage) {
+        if (intPage < 1 || intPage >= pages.size()) {
+            intPage = 1;
+        }
+        return intPage;
+    }
+
+    public String getThumbUrl(String index) {
+        return this.contextPath + "/media/images/" + getPage(index);
+    }
+
     public String getUrl(String index) {
-        // TODO; index validation
-        return getUrl(Integer.parseInt(index));
+        return getUrl(confirmPage(index));
     }
 
     public String getUrl(int index) {
-        index--;
         StringBuilder url = new StringBuilder();
-        url.append(pages.get(index));
+        url.append(getPage(index));
         url.append(".jsp");
         return getTemplate(url.toString());
     }
@@ -149,13 +181,11 @@ public class PageMapper {
     }
 
     public String getBottomMenuUrl(String index) {
-        // TODO; index validation
-        return getBottomMenuUrl(Integer.parseInt(index));
+        return getBottomMenuUrl(confirmPage(index));
     }
 
     public String getBottomMenuUrl(int index) {
-        index--;
-        return getTemplate(pages.get(index).split("_")[0] + "_menu.jsp");
+        return getTemplate(getPage(index).split("_")[0] + "_menu.jsp");
     }
     
 }

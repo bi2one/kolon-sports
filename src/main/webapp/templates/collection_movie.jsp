@@ -1,7 +1,7 @@
 <%@page contentType="text/html; charset=utf-8" %>
 <%@page import="com.mobitle.kolonsports.PageMapper" %>
 <%
-	PageMapper pageMapper = PageMapper.getInstance(request);
+	PageMapper pageMapper = PageMapper.getInstance(request, response);
 %>
 <div class="video1">
 	<video id="video" controls="controls" src="<%=pageMapper.getMovieUrl("kolon_G_Loop_smpl_comp.mov")%>">
