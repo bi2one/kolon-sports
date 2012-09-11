@@ -18,10 +18,22 @@
 				</section>
 				<section class="nav-area">
 					<nav class="left-nav-area">
-						<img src="<%= pageMapper.getImageUrl("left_nav.png") %>" width="75px" height="47px" />
+						<img  src="<%= pageMapper.getImageUrl("left_nav.png") %>" width="75px" height="47px" >
+						<ul style="width:100%;height: 100%;float: left;" >
+						<li style="height: 25%;width: 100%;"><a href="#" style="float:left; height: 100%;width:100%;"></a></li>
+						<li style="height: 25%;width: 100%;"><a href="#" style="float:left; height: 100%;width:100%;"></a></li>
+						<li style="height: 25%;width: 100%;"><a href="#" style="float:left; height: 100%;width:100%;"></a></li>
+						<li style="height: 25%;width: 100%;"><a href="#" style="float:left; height: 100%;width:100%;"></a></li>
+						</ul>				
 					</nav>
 					<nav class="right-nav-area">
-						<img src="<%= pageMapper.getImageUrl("right_nav.png") %>" width="109px" height="47px"/>
+						<img src="<%= pageMapper.getImageUrl("right_nav.png") %>" width="109px" height="47px" style="float: left;"/>
+						<ul style="width:100%;height: 100%;">
+						<li style="height: 25%;width: 100%;"><a href="#" style="float:left; height: 100%;width:100%;"></a></li>
+						<li style="height: 25%;width: 100%;"><a href="#" style="float:left; height: 100%;width:100%;"></a></li>
+						<li style="height: 25%;width: 100%;"><a href="#" style="float:left; height: 100%;width:100%;"></a></li>
+						<li style="height: 25%;width: 100%;"><a href="#" style="float:left; height: 100%;width:100%;"></a></li>
+						</ul>				
 					</nav>
 					<nav class="center-nav-area">
 						<jsp:include page="<%=pageMapper.getBottomMenuUrl(request.getParameter("page"))%>" />

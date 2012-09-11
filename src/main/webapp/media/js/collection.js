@@ -8,12 +8,14 @@ var handleMouseover = function(e) {
 		$('#center-nav div').removeClass();
 		$('#center-nav div').addClass("bt bt_" + lastID);
 		if(lastID=='first-button')
-		{
-			
-		}
+			$("img#foot_image").attr({src:"/kolon/media/images/collection_footer_runway.png"});
+		else if(lastID=='third-button')
+			$("img#foot_image").attr({src:"/kolon/media/images/collection_footer_interview.png"});
+		else if(lastID=='fourth-button')
+			$("img#foot_image").attr({src:"/kolon/media/images/collection_footer_backstage.png"});
+		
 	} else {
-		//$('#center-nav div').removeClass();
-		//$('#center-nav div').addClass("bt bt_middles");
+		$("img#foot_image").attr({src:"/kolon/media/images/collection_footer.png"});
 	}
 };
 if (document.addEventListener) {
