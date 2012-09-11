@@ -48,14 +48,12 @@
 				<param name="allowscriptaccess" value="always"/>
 				<param name="showControls" value="false"/>
 				<param name="loop" value="true" />
-				<param name="bgcolor" value="#FFFFFF" >
 				<embed src="<%=resource.getMovieUrl("kolon_G_Loop_smpl_comp.mov")%>" width="850px" height="575px"
 					type="application/x-shockwave-flash" 
 					allowscriptaccess="always" 
 					allowfullscreen="true" 
 					showcontrols="false"
-					loop="true" 
-					bgcolor="#FFFFFF"
+					loop="true"
 					wmode="transparent" />
 			</object>
 		</div>
