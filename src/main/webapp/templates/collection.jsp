@@ -7,7 +7,7 @@
 	<li id="second_menu" class=""><a href=""><img id="second-button"  src="<%=resource.getImageUrl("menu2-n.png")%>" onmouseover="this.src='<%=resource.getImageUrl("menu2-r.png")%>'" onmouseout="this.src='<%=resource.getImageUrl("menu2-n.png")%>'"/></a></li>
 	<li id="third_menu" class="" ><a href=""><img id="third-button"  src="<%=resource.getImageUrl("menu3-n.png")%>"onmouseover="this.src='<%=resource.getImageUrl("menu3-r.png")%>'" onmouseout="this.src='<%=resource.getImageUrl("menu3-n.png")%>'"/></a></li>
 	<li id="fourth_menu" class=""><a href="" ><img id="fourth-button"  src="<%=resource.getImageUrl("menu4-n.png")%>"onmouseover="this.src='<%=resource.getImageUrl("menu4-r.png")%>'" onmouseout="this.src='<%=resource.getImageUrl("menu4-n.png")%>'"/></a></li>
-	<li id="fifth_menu" class="" style="float: left; margin-top: -60;"><a href=<%=resource.getLink(2) %>><img id="fifth-button"  src="<%=resource.getImageUrl("menu5-n.png")%>"onmouseover="this.src='<%=resource.getImageUrl("menu5-r.png")%>'" onmouseout="this.src='<%=resource.getImageUrl("menu5-n.png")%>'"/></a></li>
+	<li id="fifth_menu" class="" style="float: left; margin-top: -60;"><a href=<%=resource.getPageUrl(2) %>><img id="fifth-button"  src="<%=resource.getImageUrl("menu5-n.png")%>"onmouseover="this.src='<%=resource.getImageUrl("menu5-r.png")%>'" onmouseout="this.src='<%=resource.getImageUrl("menu5-n.png")%>'"/></a></li>
 	</ul>
 </div>
 
