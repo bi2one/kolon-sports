@@ -6,7 +6,7 @@
 .sprite-left_nav_04{ background-position: 0 -186px; width: 75px; height: 11px; } 
 
 
-.sprite-left-nav { background: url('../images/sprite-left-nav-over.png') no-repeat top left; }
+.sprite-left-nav-over { background: url('../images/sprite-left-nav-over.png') no-repeat top left; }
 
 .sprite-left_nav-over_01{ background-position: 0 0; width: 75px; height: 12px; } 
 .sprite-left_nav-over_02{ background-position: 0 -62px; width: 75px; height: 12px; } 
