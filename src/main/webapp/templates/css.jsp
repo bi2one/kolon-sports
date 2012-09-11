@@ -6,3 +6,4 @@
 <link rel="stylesheet" href="<%= pageMapper.getCSSUrl("reset.css")%>" type="text/css" media="screen" />
 <link rel="stylesheet" href="<%= pageMapper.getCSSUrl("kolon.css")%>" type="text/css" media="screen" />
 <link rel="stylesheet" href="<%= pageMapper.getCSSUrl("collection.css")%>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<%= pageMapper.getCSSUrl("style_nav_images.css")%>" type="text/css" media="screen" />

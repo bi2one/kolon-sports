@@ -1,0 +1,93 @@
+.center-nav { width: 415px; height: 52px; margin: auto;}
+
+.sprite-style { background: url('../images/style-sprite-tot.png') no-repeat top left; }
+
+.sprite-lookbook-num-over_01{ background-position: 0 0; width: 19px; height: 20px; } 
+.sprite-lookbook-num-over_02{ background-position: 0 -70px; width: 19px; height: 20px; } 
+.sprite-lookbook-num-over_03{ background-position: 0 -140px; width: 19px; height: 21px; } 
+.sprite-lookbook-num-over_04{ background-position: 0 -211px; width: 20px; height: 20px; } 
+.sprite-lookbook-num-over_05{ background-position: 0 -281px; width: 20px; height: 20px; } 
+.sprite-lookbook-num-over_06{ background-position: 0 -351px; width: 20px; height: 21px; } 
+.sprite-lookbook-num-over_07{ background-position: 0 -422px; width: 18px; height: 20px; } 
+.sprite-lookbook-num-over_08{ background-position: 0 -492px; width: 18px; height: 20px; } 
+.sprite-lookbook-num-over_09{ background-position: 0 -562px; width: 18px; height: 21px; } 
+.sprite-lookbook-num-over_10{ background-position: 0 -633px; width: 20px; height: 20px; } 
+.sprite-lookbook-num-over_11{ background-position: 0 -703px; width: 20px; height: 20px; } 
+.sprite-lookbook-num-over_12{ background-position: 0 -773px; width: 20px; height: 21px; } 
+.sprite-lookbook-num-over_13{ background-position: 0 -844px; width: 19px; height: 20px; } 
+.sprite-lookbook-num-over_14{ background-position: 0 -914px; width: 19px; height: 20px; } 
+.sprite-lookbook-num-over_15{ background-position: 0 -984px; width: 19px; height: 21px; } 
+.sprite-lookbook-num-over_16{ background-position: 0 -1055px; width: 18px; height: 20px; } 
+.sprite-lookbook-num-over_17{ background-position: 0 -1125px; width: 18px; height: 20px; } 
+.sprite-lookbook-num-over_18{ background-position: 0 -1195px; width: 18px; height: 21px; } 
+.sprite-lookbook-num-over_19{ background-position: 0 -1266px; width: 19px; height: 20px; } 
+.sprite-lookbook-num-over_20{ background-position: 0 -1336px; width: 19px; height: 20px; } 
+.sprite-lookbook-num-over_21{ background-position: 0 -1406px; width: 19px; height: 21px; } 
+.sprite-lookbook-num-over_22{ background-position: 0 -1477px; width: 19px; height: 20px; } 
+.sprite-lookbook-num-over_23{ background-position: 0 -1547px; width: 19px; height: 20px; } 
+.sprite-lookbook-num-over_24{ background-position: 0 -1617px; width: 19px; height: 21px; } 
+
+.sprite-lookbook-num_01{ background-position: 0 -1688px; width: 19px; height: 20px; } 
+.sprite-lookbook-num_02{ background-position: 0 -1758px; width: 19px; height: 20px; } 
+.sprite-lookbook-num_03{ background-position: 0 -1828px; width: 19px; height: 21px; } 
+.sprite-lookbook-num_04{ background-position: 0 -1899px; width: 20px; height: 20px; } 
+.sprite-lookbook-num_05{ background-position: -70px 0; width: 20px; height: 20px; } 
+.sprite-lookbook-num_06{ background-position: -70px -70px; width: 20px; height: 21px; } 
+.sprite-lookbook-num_07{ background-position: -70px -141px; width: 18px; height: 20px; } 
+.sprite-lookbook-num_08{ background-position: -70px -211px; width: 18px; height: 20px; } 
+.sprite-lookbook-num_09{ background-position: -70px -281px; width: 18px; height: 21px; } 
+.sprite-lookbook-num_10{ background-position: -70px -352px; width: 20px; height: 20px; } 
+.sprite-lookbook-num_11{ background-position: -70px -422px; width: 20px; height: 20px; } 
+.sprite-lookbook-num_12{ background-position: -70px -492px; width: 20px; height: 21px; } 
+.sprite-lookbook-num_13{ background-position: -70px -563px; width: 19px; height: 20px; } 
+.sprite-lookbook-num_14{ background-position: -70px -633px; width: 19px; height: 20px; } 
+.sprite-lookbook-num_15{ background-position: -70px -703px; width: 19px; height: 21px; } 
+.sprite-lookbook-num_16{ background-position: -70px -774px; width: 18px; height: 20px; } 
+.sprite-lookbook-num_17{ background-position: -70px -844px; width: 18px; height: 20px; } 
+.sprite-lookbook-num_18{ background-position: -70px -914px; width: 18px; height: 21px; } 
+.sprite-lookbook-num_19{ background-position: -70px -985px; width: 19px; height: 20px; } 
+.sprite-lookbook-num_20{ background-position: -70px -1055px; width: 19px; height: 20px; } 
+.sprite-lookbook-num_21{ background-position: -70px -1125px; width: 19px; height: 21px; } 
+.sprite-lookbook-num_22{ background-position: -70px -1196px; width: 19px; height: 20px; } 
+.sprite-lookbook-num_23{ background-position: -70px -1266px; width: 19px; height: 20px; } 
+.sprite-lookbook-num_24{ background-position: -70px -1336px; width: 19px; height: 21px; } 
+
+.sprite-lookbook_footer_01{ background-position: -70px -1407px; width: 26px; height: 52px; } 
+.sprite-lookbook_footer_02{ background-position: -70px -1509px; width: 355px; height: 36px; } 
+.sprite-lookbook_footer_03{ background-position: -70px -1595px; width: 34px; height: 52px; } 
+.sprite-lookbook_footer_04{ background-position: -70px -1697px; width: 46px; height: 16px; } 
+.sprite-lookbook_footer_05{ background-position: -70px -1763px; width: 70px; height: 16px; } 
+.sprite-lookbook_footer_06{ background-position: -70px -1829px; width: 142px; height: 16px; } 
+.sprite-lookbook_footer_07{ background-position: -70px -1895px; width: 97px; height: 16px; } 
+
+.sprite-people_footer_01{ background-position: -475px 0; width: 26px; height: 52px; } 
+.sprite-people_footer_02{ background-position: -475px -102px; width: 355px; height: 36px; } 
+.sprite-people_footer_03{ background-position: -475px -188px; width: 34px; height: 52px; } 
+.sprite-people_footer_04{ background-position: -475px -290px; width: 46px; height: 16px; } 
+.sprite-people_footer_05{ background-position: -475px -356px; width: 70px; height: 16px; } 
+.sprite-people_footer_06{ background-position: -475px -422px; width: 142px; height: 16px; } 
+.sprite-people_footer_07{ background-position: -475px -488px; width: 97px; height: 16px; } 
+
+.sprite-styleon_footer_01{ background-position: -475px -554px; width: 26px; height: 52px; } 
+.sprite-styleon_footer_02{ background-position: -475px -656px; width: 355px; height: 36px; } 
+.sprite-styleon_footer_03{ background-position: -475px -742px; width: 34px; height: 52px; } 
+.sprite-styleon_footer_04{ background-position: -475px -844px; width: 46px; height: 16px; } 
+.sprite-styleon_footer_05{ background-position: -475px -910px; width: 70px; height: 16px; } 
+.sprite-styleon_footer_06{ background-position: -475px -976px; width: 142px; height: 16px; } 
+.sprite-styleon_footer_07{ background-position: -475px -1042px; width: 97px; height: 16px; } 
+
+.sprite-stylepick_footer_01{ background-position: -475px -1108px; width: 26px; height: 52px; } 
+.sprite-stylepick_footer_02{ background-position: -475px -1210px; width: 355px; height: 36px; } 
+.sprite-stylepick_footer_03{ background-position: -475px -1296px; width: 34px; height: 52px; } 
+.sprite-stylepick_footer_04{ background-position: -475px -1398px; width: 46px; height: 16px; } 
+.sprite-stylepick_footer_05{ background-position: -475px -1464px; width: 70px; height: 16px; } 
+.sprite-stylepick_footer_06{ background-position: -475px -1530px; width: 142px; height: 16px; } 
+.sprite-stylepick_footer_07{ background-position: -475px -1596px; width: 97px; height: 16px; } 
+
+.sprite-women_footer_01{ background-position: -475px -1662px; width: 26px; height: 52px; } 
+.sprite-women_footer_02{ background-position: -475px -1764px; width: 355px; height: 36px; } 
+.sprite-women_footer_03{ background-position: -475px -1850px; width: 34px; height: 52px; } 
+.sprite-women_footer_04{ background-position: -880px 0; width: 46px; height: 16px; } 
+.sprite-women_footer_05{ background-position: -880px -66px; width: 70px; height: 16px; } 
+.sprite-women_footer_06{ background-position: -880px -132px; width: 142px; height: 16px; } 
+.sprite-women_footer_07{ background-position: -880px -198px; width: 97px; height: 16px; } 
