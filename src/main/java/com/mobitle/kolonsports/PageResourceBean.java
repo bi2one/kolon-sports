@@ -15,6 +15,7 @@ public class PageResourceBean implements java.io.Serializable {
     private String mediaUrl;
     private String imageUrl;
     private String movieUrl;
+    private String cssUrl;
     private String scriptUrl;
 
     public void init(HttpServletRequest request) {
@@ -31,6 +32,19 @@ public class PageResourceBean implements java.io.Serializable {
         setImageUrl(getMediaUrl("images"));
         setMovieUrl(getMediaUrl("movies"));
         setScriptUrl(getMediaUrl("js"));
+        setCssUrl(getMediaUrl("css"));
+    }
+    
+    public void setCssUrl(String url) {
+    	this.cssUrl = url;
+    }
+    
+    public String getCssUrl() {
+    	return cssUrl;
+    }
+    
+    public String getCssUrl(String name) {
+    	return cssUrl + "/" + name;
     }
 
     public void setIndexPageUrl(String url) {
