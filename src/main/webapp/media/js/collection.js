@@ -1,4 +1,3 @@
-/*
 var lastID = null;
 var handleMouseover = function(e) {
 	var target = e.target || e.srcElement;
@@ -9,7 +8,7 @@ var handleMouseover = function(e) {
 			$('#collection_menu').removeClass();
 			$('#collection_menu').addClass("co co-" + lastID);
 	}
-	else if(lastID=='co-runway'||lastID=='co-interview'||lastID=='co-backstage'){
+	else if(lastID=='collection_runway_movie_menu'||lastID=='collection_interview_movie_menu'||lastID=='collection_to_backstage'){
 		$('#collection_menu').removeClass();
 		$('#collection_menu').addClass("co co-" + lastID);
 	}
@@ -22,4 +21,4 @@ if (document.addEventListener) {
 	document.addEventListener('mouseover', handleMouseover, false);
 } else {
 	document.attachEvent('onmouseover', handleMouseover);
-}*/
+}

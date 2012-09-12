@@ -23,8 +23,9 @@ public class PageResourceBean implements java.io.Serializable {
     private String movieUrl;
     private String cssUrl;
     private String scriptUrl;
-
-    public void init(HttpServletRequest request) {
+    private String browser;
+    
+	public void init(HttpServletRequest request) {
         setIndexPageUrl("/index.jsp");
         setAllPageUrl("/allpage.jsp");
         setTemplateUrl("/templates");
@@ -39,6 +40,7 @@ public class PageResourceBean implements java.io.Serializable {
         setMovieUrl(getMediaUrl("movies"));
         setScriptUrl(getMediaUrl("js"));
         setCssUrl(getMediaUrl("css"));
+        
     }
 
     private void initThumbnails() {
@@ -62,6 +64,10 @@ public class PageResourceBean implements java.io.Serializable {
 //        return thumbnails;
     }
 
+	public void setBrowser(String browser) {
+		this.browser = browser;
+	}
+    
     public void setCssUrl(String url) {
     	this.cssUrl = url;
     }
@@ -150,6 +156,10 @@ public class PageResourceBean implements java.io.Serializable {
         }
     }
 
+    public String getBrowser() {
+		return browser;
+	}
+    
     public String getImageUrl() {
         return imageUrl;
     }
