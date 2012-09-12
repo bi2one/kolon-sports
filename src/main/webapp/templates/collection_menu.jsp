@@ -11,7 +11,6 @@
 
 <script>
 $(document).ready(function() {
-	if( navigator.appName.indexOf("Microsoft") > -1 ){ // IE?
 		$("a#collection_runway_movie").fancybox({
 			'scrolling'     : 'no',
 			'overlayOpacity': 0.1,
@@ -20,83 +19,42 @@ $(document).ready(function() {
 			'height': 300,
 			'autoDimensions': false,
 			'autoSize': false,
-			'content' : "<%=resource.vedioStarter("ie", "kolon_G_Loop_smpl_comp.mov")%>"
-		});
-		$("a#collection_interview_movie").fancybox({
-			'scrolling'     : 'no',
-			'overlayOpacity': 0.1,
-			'showCloseButton'   : false,
-			'width' : 500,
-			'height': 300,
-			'autoDimensions': false,
-			'autoSize': false,
-			'content' : "<%=resource.vedioStarter("ie", "kolon_G_Loop_smpl_comp.mov")%>"
-		});
-		$("a#collection_runway_movie_menu").fancybox({
-			'scrolling'     : 'no',
-			'overlayOpacity': 0.1,
-			'showCloseButton'   : false,
-			'width' : 500,
-			'height': 300,
-			'autoDimensions': false,
-			'autoSize': false,
-			'content' : "<%=resource.vedioStarter("ie", "kolon_G_Loop_smpl_comp.mov")%>"
-		});
-		$("a#collection_interview_movie_menu").fancybox({
-			'scrolling'     : 'no',
-			'overlayOpacity': 0.1,
-			'showCloseButton'   : false,
-			'width' : 500,
-			'height': 300,
-			'autoDimensions': false,
-			'autoSize': false,
-			'content' : "<%=resource.vedioStarter("ie", "kolon_G_Loop_smpl_comp.mov")%>"
-		});
-	}
-	else{
-		$("a#collection_runway_movie").fancybox({
-			'scrolling'     : 'no',
-	        'overlayOpacity': 0.1,
-	        'showCloseButton'   : false,
-			'width' : 500,
-			'height': 300,
-			'autoDimensions': false,
-			'autoSize': false,
-	        'content' : "<%=resource.vedioStarter("chrome", "kolon_G_Loop_smpl_comp.mov")%>"
-		});
-		$("a#collection_interview_movie").fancybox({
-			'scrolling'     : 'no',
-	        'overlayOpacity': 0.1,
-	        'showCloseButton'   : false,
-			'width' : 500,
-			'height': 300,
-			'autoDimensions': false,
-			'autoSize': false,
-	        'content' : "<%=resource.vedioStarter("chrome", "kolon_G_Loop_smpl_comp.mov")%>"
-		});
-		$("a#collection_runway_movie_menu").fancybox({
-			'scrolling'     : 'no',
-	        'overlayOpacity': 0.1,
-	        'showCloseButton'   : false,
-			'width' : 500,
-			'height': 300,
-			'autoDimensions': false,
-			'autoSize': false,
-	        'content' : "<%=resource.vedioStarter("chrome", "kolon_G_Loop_smpl_comp.mov")%>"
-		});
-		$("a#collection_interview_movie_menu").fancybox({
-			'scrolling'     : 'no',
-	        'overlayOpacity': 0.1,
-	        'showCloseButton'   : false,
-			'width' : 500,
-			'height': 300,
-			'autoDimensions': false,
-			'autoSize': false,
-	        'content' : "<%=resource.vedioStarter("chrome", "kolon_G_Loop_smpl_comp.mov")%>"
+			'content' : "<%=resource.vedioStarter("kolon_G_Loop_smpl_comp.mov")%>"
 		});
 		
-	}
-	/* Using custom settings */
+		$("a#collection_interview_movie").fancybox({
+			'scrolling'     : 'no',
+			'overlayOpacity': 0.1,
+			'showCloseButton'   : false,
+			'width' : 500,
+			'height': 300,
+			'autoDimensions': false,
+			'autoSize': false,
+			'content' : "<%=resource.vedioStarter("kolon_G_Loop_smpl_comp.mov")%>"
+		});
+		
+		$("a#collection_runway_movie_menu").fancybox({
+			'scrolling'     : 'no',
+			'overlayOpacity': 0.1,
+			'showCloseButton'   : false,
+			'width' : 500,
+			'height': 300,
+			'autoDimensions': false,
+			'autoSize': false,
+			'content' : "<%=resource.vedioStarter("kolon_G_Loop_smpl_comp.mov")%>"
+		});
+		
+		$("a#collection_interview_movie_menu").fancybox({
+			'scrolling'     : 'no',
+			'overlayOpacity': 0.1,
+			'showCloseButton'   : false,
+			'width' : 500,
+			'height': 300,
+			'autoDimensions': false,
+			'autoSize': false,
+			'content' : "<%=resource.vedioStarter("kolon_G_Loop_smpl_comp.mov")%>"
+		});
+
 });
 </script>
 
